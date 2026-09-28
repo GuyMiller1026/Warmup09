@@ -13,8 +13,8 @@
 /// ```
 /// Hint: Consider what happens to the decimal values before we 
 /// cast from u32 to f64.
-pub fn average_dollars(total_cents: u32, count: u32) -> f64 {
-    (total_cents / 100.0 / count) as f64 
+pub fn average_dollars(total_cents: i32, count: u32) -> f64 {
+    (total_cents as f64) / 100.0 / (count as f64) 
 }
 
 /// Compares an average price against a spending limit (both in dollars).
